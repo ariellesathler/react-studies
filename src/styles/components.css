@@ -1,0 +1,47 @@
+.container{
+  /* border:  5px cyan solid; */
+  display: grid;
+  grid-template-areas: 
+    "menu sidebar"
+    "conteudo sidebar"
+    "rodape sidebar";
+  grid-template-rows: 20% 70% 10% ;
+  grid-template-columns: auto 20%;
+
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 50px;
+  gap: 5px; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+}
+/* .container:hover{
+  grid-template-areas: 
+    "menu menu"
+    "conteudo conteudo"
+    "rodape rodape";    
+  grid-template-columns: 100%;
+  overflow: hidden
+} */
+.flex-item{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+}
+
+.item-menu{
+  grid-area: menu;
+  background-color: crimson;
+}
+.item-conteudo{
+  grid-area: conteudo;
+  background-color: indianred;
+}
+.item-sidebar{
+  grid-area: sidebar;
+  background-color: lightcoral;
+}
+.item-rodape{
+  grid-area: rodape;
+  background-color: lightpink;
+}
+
